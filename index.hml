@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>JK Sports Arena | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-modified.png" alt="" width="75px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li></button><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+              <!-- TODo: 22:20 -->
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="images/cart.png" alt="" width="30px" height="30px"
+          /></a>
+          <img
+            src="images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1 class="animate-character">
+              JK SPORTS Arena
+            </h1>
+            <p>
+              Get all branded jerseys of your favourite team.<br />
+              And win a chance of signed jersey.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/RM1.jpg" class="d-block w-90" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/RM2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/j2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/j1.jpg" class="d-block w-100" alt="..."  >
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <!----- Featurd Categories--------->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/jersey.jpg " alt="" />
+          </div>
+          <div class="col-3">
+            <img src="images/studs.jpeg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="images/gk.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- Featurd Products--------->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/rm6.jpg" alt=""
+          /></a>
+          <h4>Real Madrid Home Jersey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.3500</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/rm4.jpg" alt="" />
+          <h4>Real Madrid Away</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.3200</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/bar2.jpg" alt="" />
+          <h4>Barcelona Away Jersey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.3500</p>
+        </div>
+        <div class="col-4">
+          <img src="images/barcelona4.jpg" alt="" />
+          <h4>Barcelona Home Jersey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.3200</p>
+        </div>
+      </div>
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/bar1.jpg" alt="" />
+          <h4>Barcelona Jersey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.3000</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/Mancity2.jpg" alt="" />
+          <h4>ManCity Home Jersey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.2500</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/liverpool1.jpg" alt="" />
+          <h4>Liverpool Home Jersey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs.2800</p>
+        </div>
+        <div class="col-4">
+          <img src="images/psg1.jpg" alt="" />
+          <h4>PSG Home Jerseyt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.3100</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/studs.jpeg" alt="" />
+          <h4>Nike Mercurial</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.11000</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/studs2.jpg" alt="" />
+          <h4>Nike CR7 Edition</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.9500</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/studspredator.png" alt="" />
+          <h4>Adidas Predator</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.10500</p>
+        </div>
+        <div class="col-4">
+          <img src="images/studs9.jpeg.png" alt="" />
+          <h4>Puma King Platinum</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.7500</p>
+        </div>
+      </div>
+    </div>
+
+    <!-------- Offer --------->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/exclusive.png" class="offer-img" alt=""/>
+          </div>
+          <div class="col-2">
+            <p>Exclusively available</p>
+            <h1>NIKE Mercurial Dream Speed 003</h1>
+            <small>
+              Inspired by the pure speed of the game, Nike launched the third drop from their Mercurial 'Dream Speed' series in October, with a design packed with graphic elements that characterise quickness. Unlike the last to instalments in the franchise which were reserved for Ronaldo, Mbappé and Kerr, the Dream Speed 3 was worn by a host of youngsters, signalling the shape of Nike's up and coming roster.
+            </small>
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------ Testimonial  ------>
+    <div class="testimonial">
+      <h class="testimonial">Our Top Reviews</h>
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+
+            <p>
+                This site is very useful for those who are going to buy a jerseys and football shoes.
+                I like this product mostly because it gives genuine and detail information.
+                The other thing about this product that it is user-friendly and all the contents are visible clearly.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="images/ronaldo.jpg" alt="" />
+            <h3>Ronaldo</h3>
+          </div>
+
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+
+            <p>
+                This website was more use to review the football kits and know how to buy the trending jerseys. And customer service and about the website is more clear to view.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="images/messi.jfif" alt="" />
+            <h3>Messi </h3>
+          </div>
+
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+
+            <p>
+                This can be helpful in taking decision on selection on football shoes features based on your requirement. It founds suitable in finding latest trends and reviews from others based on several criterion.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/neymar.jpg" alt="" />
+            <h3>Neymar Jr</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brands -->
+
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/nike-logo.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/puma-logo.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/adidas-logo.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/nivia-logo.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img src="images/nb-logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services">
+	
+      <div class="container">
+        <h1>Our Services</h1>
+        <div class="row services" >
+          <div class= "col-md-4 text-center">
+            <div class="icon">
+            <i class="fa fa-phone"></i>
+            </div>
+            <h3> 24/7 Support</h3>
+            <p>on order related queries</p>
+          </div>
+        
+          <div class="col-md-4 text-center">
+            <div class="icon">
+            <i class="fa fa-shopping-cart"></i>
+            </div>
+            <h3> Return within 30 days</h3>
+            <p>of receiving your order</p>
+          </div>
+        
+          <div class="col-md-4 text-center">
+            <div class="icon">
+            <i class="fa fa-truck"></i>
+            </div>
+            <h3>Get free delivery</h3>
+            <p>on orders above Rs.4000</p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <!------Contact------------>	
+<section id="contact">	
+	
+	<div class="container">
+		<h1>Get In Touch</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<form class="contact-form">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Your Name..">
+				</div>
+				<div class="form-group">
+				<input type="number" class="form-control" placeholder="Phone no.">
+				</div>
+				<div class="form-group">
+				<input type="email" class="form-control" placeholder="Email..">
+				</div>
+				<div class="form-group">
+				<textarea class="form-control" rows="4" placeholder="Message.."></textarea>
+				</div>
+			
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-6 contact-info"> 
+				<div class="follow"><b><i class="fa fa-map-marker"></i>  </b>Pimpri-Chinchwad,Pune,India</div>
+				<div class="follow"><b><i class="fa fa-mobile"></i>  </b>(+91)7718328123</div>
+				<div class="follow"><b><i class="fa fa-envelope"></i>  </b>jksportsarena@gmail.com</div>
+			</div>			
+		</div>
+	</div>
+</section>
+
+
+    <!-- Map -->
+    <!-- <iframe
+        src="https://goo.gl/maps/aWhP37N7XpfXbgyK6"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>About us</h3>
+            <p> All items sold on QPR experience a thorough Quality Checking process and we give a service contract. We offer our purchasers and vendors a helpful commercial center through our online stage.</p>
+            <button class="btn btn-secondary">Read More</button>
+          </div>
+          <div class="footer-col-4">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.jpg" alt="" />
+            <p>
+              Best Football Product Online Store at reasonable rate.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <div class="box">
+                <h3 class="social">Follow Us</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/login/" target="_blank">
+                                <img src="./icons/facebook.svg" alt="">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/JayeshKhadke7" target="_blank">
+                                <img src="./icons/twitter.svg" alt="">
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jayeshk_.2003" target="_blank">
+                                <img src="./icons/instagram.svg" alt="">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
